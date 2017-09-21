@@ -24,5 +24,6 @@ module.exports = function check(str, bracketsConfig) {
     if (sameBrackets.indexOf(item) > -1) stack.slice(-1).pop() === item ? stack.pop() : stack.push(item);
   });
   if (stack.length > 0) result = false;
+  
   return result;
 }
